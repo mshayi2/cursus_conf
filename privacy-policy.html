@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Politique de confidentialite de l'application ASM-RDC.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Politique de confidentialite | ASM-RDC</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17211c;
+      --muted: #58635d;
+      --paper: #ffffff;
+      --canvas: #eef3ef;
+      --green: #176b4d;
+      --green-dark: #0d4934;
+      --gold: #c7982c;
+      --line: #d7e0da;
+      --warning: #fff8e7;
+      --warning-line: #d5a73b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(90deg, transparent 49px, rgba(23, 107, 77, 0.06) 50px, transparent 51px),
+        var(--canvas);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--green-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .topbar {
+      height: 8px;
+      background: linear-gradient(90deg, var(--green-dark), var(--green) 72%, var(--gold));
+    }
+
+    .page {
+      width: min(100% - 32px, 920px);
+      margin: 32px auto 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 50px rgba(23, 33, 28, 0.09);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 24px;
+      align-items: center;
+      padding: 42px 48px 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+    }
+
+    .eyebrow {
+      margin: 0 0 5px;
+      color: var(--green);
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 500;
+    }
+
+    .updated {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 34px 48px 48px;
+    }
+
+    .summary {
+      margin: 0 0 36px;
+      padding: 20px 22px;
+      border-left: 4px solid var(--green);
+      background: #f3f8f5;
+      font-size: 18px;
+    }
+
+    .notice {
+      margin: 0 0 32px;
+      padding: 18px 20px;
+      border: 1px solid var(--warning-line);
+      background: var(--warning);
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 14px;
+    }
+
+    nav {
+      margin-bottom: 38px;
+      padding: 22px 24px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      columns: 2;
+      column-gap: 36px;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 14px;
+    }
+
+    nav a {
+      display: block;
+      margin: 6px 0;
+      break-inside: avoid;
+    }
+
+    section {
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      margin: 40px 0 12px;
+      color: var(--green-dark);
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 14px;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      background: #eef5f1;
+      color: var(--green-dark);
+    }
+
+    footer {
+      padding: 24px 48px;
+      background: var(--green-dark);
+      color: #ffffff;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 13px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 16px;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      header {
+        grid-template-columns: 72px 1fr;
+        gap: 16px;
+        padding: 28px 22px;
+      }
+
+      .logo {
+        width: 72px;
+        height: 72px;
+      }
+
+      main {
+        padding: 28px 22px 40px;
+      }
+
+      nav {
+        columns: 1;
+      }
+
+      .data-table,
+      .data-table tbody,
+      .data-table tr,
+      .data-table th,
+      .data-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .data-table tr {
+        margin-bottom: 14px;
+      }
+
+      .data-table th {
+        border-bottom: 0;
+      }
+
+      footer {
+        padding: 22px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .topbar,
+      nav,
+      .notice {
+        display: none;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar" aria-hidden="true"></div>
+  <article class="page">
+    <header>
+      <img class="logo" src="data:image/jpeg;base64,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" alt="Logo ASM-RDC">
+      <div>
+        <p class="eyebrow">Application ASM-RDC</p>
+        <h1>Politique de confidentialite</h1>
+        <p class="updated">Derniere mise a jour : 28 septembre 2026</p>
+      </div>
+    </header>
+
+    <main>
+      <p class="summary">
+        La presente politique explique quelles donnees sont traitees par l'application
+        ASM-RDC, pourquoi elles le sont, comment elles sont protegees et quels droits
+        peuvent exercer les personnes concernees.
+      </p>
+      
+
+      <nav aria-label="Sommaire">
+        <a href="#responsable">1. Responsable du traitement</a>
+        <a href="#donnees">2. Donnees traitees</a>
+        <a href="#finalites">3. Finalites</a>
+        <a href="#collecte">4. Collecte et synchronisation</a>
+        <a href="#partage">5. Partage des donnees</a>
+        <a href="#conservation">6. Conservation</a>
+        <a href="#securite">7. Securite</a>
+        <a href="#droits">8. Droits des personnes</a>
+        <a href="#enfants">9. Protection des mineurs</a>
+        <a href="#modifications">10. Modifications</a>
+        <a href="#contact">11. Contact</a>
+      </nav>
+
+      <section id="responsable">
+        <h2>1. Responsable du traitement</h2>
+        <p>
+          L'application ASM-RDC est exploitee par <strong>MENJI GROUP Sarl</strong>, etablie a <strong>171 bypass, Kinshasa, RDC</strong>.
+          Cette organisation determine les finalites et les moyens du traitement des
+          donnees gerees au moyen de l'application.
+        </p>
+      </section>
+
+      <section id="donnees">
+        <h2>2. Donnees traitees</h2>
+        <p>L'application peut enregistrer les categories de donnees suivantes :</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Categorie</th>
+              <th>Exemples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Cooperative</th>
+              <td>Nom, sigle, adresse, province, localite, telephone, email et numero d'identification fiscale.</td>
+            </tr>
+            <tr>
+              <th>Identite du membre</th>
+              <td>Nom, postnom, prenom, genre, lieu et date de naissance.</td>
+            </tr>
+            <tr>
+              <th>Coordonnees</th>
+              <td>Adresse, numero de telephone et adresse email.</td>
+            </tr>
+            <tr>
+              <th>Activite professionnelle</th>
+              <td>Code de creuseur, code ZEA, site de travail, date d'adhesion et eventuelle date de depart.</td>
+            </tr>
+            <tr>
+              <th>Photo</th>
+              <td>Photo du membre choisie depuis l'appareil photo ou la galerie avec son accord.</td>
+            </tr>
+            <tr>
+              <th>Donnees techniques</th>
+              <td>Identifiants locaux, identifiant aleatoire de l'installation, version de synchronisation et dates techniques de creation.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          L'application n'integre actuellement ni publicite, ni suivi publicitaire, ni
+          vente de donnees personnelles.
+        </p>
+      </section>
+
+      <section id="finalites">
+        <h2>3. Finalites du traitement</h2>
+        <p>Ces donnees sont utilisees exclusivement pour :</p>
+        <ul>
+          <li>constituer et tenir a jour le registre d'une cooperative miniere ;</li>
+          <li>identifier les membres et administrer leur adhesion ou leur depart ;</li>
+          <li>faciliter la recherche et la consultation des fiches par les utilisateurs autorises ;</li>
+          <li>synchroniser les fiches avec le serveur de gestion de l'organisation ;</li>
+          <li>assurer l'integrite, la continuite et le support technique du service.</li>
+        </ul>
+      </section>
+
+      <section id="collecte">
+        <h2>4. Collecte, stockage local et synchronisation</h2>
+        <p>
+          Les informations sont saisies par un utilisateur de l'application. Les photos
+          sont selectionnees depuis la galerie ou prises avec l'appareil photo uniquement
+          apres une action explicite de l'utilisateur et l'autorisation du systeme.
+        </p>
+        <p>
+          Les fiches sont d'abord conservees dans le stockage local de l'appareil. Lorsqu'un
+          utilisateur lance la synchronisation, les donnees en attente sont envoyees au
+          serveur de l'organisation au moyen d'une connexion HTTPS. La desinstallation de
+          l'application peut supprimer les donnees locales, mais ne supprime pas
+          automatiquement les copies deja synchronisees sur le serveur.
+        </p>
+      </section>
+
+      <section id="partage">
+        <h2>5. Destinataires et partage des donnees</h2>
+        <p>
+          Les donnees sont accessibles aux personnes autorisees par la cooperative ou
+          l'organisation responsable, ainsi qu'aux prestataires techniques indispensables
+          a l'hebergement, la maintenance et la securisation du serveur. Ces intervenants
+          ne peuvent les utiliser que pour fournir les services convenus.
+        </p>
+        <p>
+          Aucune donnee n'est vendue. Une communication peut toutefois avoir lieu lorsqu'elle
+          est imposee par la loi, une autorite competente ou necessaire a la defense de droits
+          legitimes.
+        </p>
+      </section>
+
+      <section id="conservation">
+        <h2>6. Duree de conservation</h2>
+        <p>
+          Les donnees sont conservees pendant la duree necessaire a la gestion de la
+          cooperative et au respect des obligations administratives ou legales applicables.
+          Elles sont ensuite supprimees ou anonymisees, sauf lorsqu'une conservation plus
+          longue est requise par la loi ou necessaire a la constatation, l'exercice ou la
+          defense d'un droit.
+        </p>
+      </section>
+
+      <section id="securite">
+        <h2>7. Securite des donnees</h2>
+        <p>
+          Des mesures raisonnables sont mises en oeuvre pour proteger les donnees contre
+          l'acces non autorise, la perte, l'alteration ou la divulgation. Les transferts
+          entre l'application et le serveur utilisent HTTPS. Aucun moyen de transmission
+          ou de stockage n'etant totalement infaillible, une securite absolue ne peut etre
+          garantie.
+        </p>
+        <p>
+          L'utilisateur doit proteger l'acces a son appareil, appliquer les mises a jour de
+          securite disponibles et ne confier l'application qu'aux personnes autorisees.
+        </p>
+      </section>
+
+      <section id="droits">
+        <h2>8. Droits des personnes concernees</h2>
+        <p>
+          Sous reserve de la legislation applicable, une personne concernee peut demander
+          l'acces a ses donnees, leur rectification, leur suppression, la limitation de leur
+          traitement ou s'opposer a certains usages. Elle peut egalement signaler une
+          information inexacte a sa cooperative.
+        </p>
+        <p>
+          Toute demande doit permettre de verifier raisonnablement l'identite du demandeur
+          et les donnees visees. Elle peut etre adressee au contact indique ci-dessous. La
+          demande sera traitee dans un delai raisonnable et selon les obligations legales
+          applicables.
+        </p>
+      </section>
+
+      <section id="enfants">
+        <h2>9. Protection des mineurs</h2>
+        <p>
+          ASM-RDC est un outil professionnel destine a la gestion de cooperatives minieres.
+          Il n'est pas destine aux enfants et ne doit pas servir a enregistrer sciemment les
+          donnees d'une personne qui n'a pas l'age legal requis pour exercer cette activite.
+        </p>
+      </section>
+
+      <section id="modifications">
+        <h2>10. Modifications de cette politique</h2>
+        <p>
+          Cette politique peut etre mise a jour pour tenir compte de l'evolution de
+          l'application, du serveur ou des obligations legales. La date de derniere mise a
+          jour affichee en haut de la page permet d'identifier la version en vigueur. Toute
+          modification importante sera portee a la connaissance des utilisateurs par un
+          moyen approprie.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact</h2>
+        <p>
+          Pour toute question relative a cette politique ou pour exercer vos droits :
+        </p>
+        <ul>
+          <li><strong>Organisation :</strong> MENJI GROUP Sarl</li>
+          <li><strong>Email :</strong> <a href="mailto:[email-confidentialite]">info@menjigroup.com</a></li>
+          <li><strong>Adresse :</strong> 171 bypass, Kinshasa, RDC</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 ASM-RDC. Politique de confidentialite de l'application mobile.</p>
+    </footer>
+  </article>
+</body>
+</html>
